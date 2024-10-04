@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Duel: Two-Player Timed Word Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+    <div class="container">
+        <a href="https://github.com/duclo90/Word-Duel"> 
+            <img src="/images/logo.png" alt="Word Duel Logo" class="logo">
+        </a>
+        <h1>Word Duel</h1>
+        <p class="tagline">Challenge your friend in a battle of words and wit!</p>
+    </div>
+</header>
+    <main class="container">
+        <div class="game-container">
+            <h2 class="game-title">Word Duel</h2>
+            <div class="game-controls">
+                <button id="start-game-btn" class="btn btn-primary" onclick="playBtnSound()">Start Game</button>
+                <button id="quit-game-btn" class="btn btn-danger">Quit Game</button>
+            </div>
+            <div id="letter" class="letter-display"></div>
+            <div class="players-container">
+                <div class="player-card" id="player1-card">
+                    <h3 class="player-name">Player 1</h3>
+                    <div class="player-input">
+                        <input type="text" id="player1-input" class="word-input" placeholder="Enter a word" disabled>
+                        <button id="player1-submit" class="btn btn-submit" disabled>Submit</button>
+                    </div>
+                </div>
+                <div class="player-card" id="player2-card">
+                    <h3 class="player-name">Player 2</h3>
+                    <div class="player-input">
+                        <input type="text" id="player2-input" class="word-input" placeholder="Enter a word" disabled>
+                        <button id="player2-submit" class="btn btn-submit" disabled>Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="timer" class="timer">Time left: <span id="time">25</span>s</div>
+            <div id="message" class="message"></div>
+        </div>
+    </main>
+    <div id="used-words-container" class="used-words-container">
+        <div class="used-words-header">
+            <h3>Used Words</h3>
+            <button id="close-used-words" class="close-btn">&times;</button>
+        </div>
+        <ul id="used-words-list" class="used-words-list"></ul>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Word Duel. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>

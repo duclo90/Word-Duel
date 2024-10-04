@@ -1,0 +1,105 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Center the logo and add some space below it */
+}
+
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .tagline {
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    main {
+        padding: 40px 0;
+    }
+
+    .game-intro {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .feature {
+        flex-basis: 30%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .feature h3 {
+        color: #764ba2;
+    }
+
+    .cta {
+        text-align: center;
+    }
+
+    .play-button {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        background: linear-gradient(to bottom, #4CAF50, #45a049);
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 6px 0 #2E7D32, 0 8px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-decoration: none;
+    }
+
+    .play-button:hover {
+        background: linear-gradient(to bottom, #5CBF60, #4CAF50);
+        transform: translateY(-2px);
+    }
+
+    .play-button:active {
+        transform: translateY(4px);
+        box-shadow: 0 2px 0 #2E7D32, 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+    }
