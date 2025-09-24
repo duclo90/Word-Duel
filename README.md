@@ -13,7 +13,6 @@
 ## 🛠️ Technologies Used
 
 - HTML, CSS, JavaScript  
-- [Optional: any library or framework you used, e.g., React, Vercel hosting]  
 
 ## 🚀 How to Play
 
